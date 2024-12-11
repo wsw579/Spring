@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>테이블</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid purple;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>테이블 예제</h1>
+
+    <!-- 첫 번째 테이블 -->
+    <table>
+        <thead>
+            <tr> <!-- 표의 각 행 -->
+                <th>번호</th> <!-- 표의 머리글 셀 -->
+                <th>이름</th>
+                <th>나이</th>
+            </tr>
+        </thead>
+        <tbody> <!-- 머리글 셀 구분 -->
+            <tr>
+                <td rowspan="2">1</td> <!-- 병합된 셀 -->
+                <td>장원영</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>안유진</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">테이블 바닥글</td> <!-- 열 병합 -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <br>
+
+    <!-- 두 번째 테이블 -->
+    <table>
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th colspan="2">정보</th> <!-- 열 병합 -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>장원영</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>안유진</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+
+</html>
